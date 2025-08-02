@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  background-color: #e6f4ea; /* soft green background */
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #2e7d32; /* dark green */
+}
+
+button {
+  padding: 12px 24px;
+  margin: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #388e3c; /* medium green */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #2e7d32; /* darker green on hover */
+}
+
+.word-box {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 20px 36px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(46, 125, 50, 0.15); /* subtle green shadow */
+  color: #1b5e20;
+}
+
+.timer {
+  font-size: 36px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: color 0.3s ease-in-out;
+  animation: pulse 1s infinite;
+}
+
+.timer.green {
+  color: #388e3c;
+}
+
+.timer.orange {
+  color: #f57c00;
+}
+
+.timer.red {
+  color: #c62828;
+}
+
+.timer-end {
+  font-size: 40px;
+  font-weight: bold;
+  color: #d32f2f;
+  animation: flash 1s steps(2, start) infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.08); }
+  100% { transform: scale(1); }
+}
+
+@keyframes flash {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.scoreboard {
+  margin-top: 40px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(0, 100, 0, 0.1);
+}
+
+.teams {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.team {
+  text-align: center;
+}
+
+.team h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.score {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin: 10px 0;
+}
+
