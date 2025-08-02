@@ -13,7 +13,7 @@ A fun and interactive web app for playing Dumb Charades — perfect for game nig
 
 ## 🚀 Demo
 
-🔗 [Live Demo](https://shrikantbk06.github.io/dumb-charades) — *(Coming soon)*  
+🔗 [Live Demo](https://shrikantbk06.github.io/dumb-charades)
 📁 `client/` contains the frontend code
 
 ## 🛠 Tech Stack
