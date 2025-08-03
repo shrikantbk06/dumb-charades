@@ -11,18 +11,18 @@ A fun and interactive web app for playing Dumb Charades — perfect for game nig
 - 🏆 Scoreboard to track team points
 - 💻 Built with React, HTML, CSS (no external styling libraries)
 
-## 🚀 Demo
+## Screenshot
 
-🔗 [Live Demo](https://shrikantbk06.github.io/dumb-charades)
-📁 `client/` contains the frontend code
+### Dumb Charades
+![Dumb Charades](screenshots/dumb-charades.png)
 
-## 🛠 Tech Stack
+## Tech Stack
 
 - React
 - JavaScript (ES6+)
 - HTML/CSS
 
-## 📦 Installation
+## Installation
 
 ```bash
 git clone https://github.com/shrikantbk06/dumb-charades.git
