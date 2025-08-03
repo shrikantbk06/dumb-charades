@@ -21,6 +21,7 @@ A fun and interactive web app for playing Dumb Charades — perfect for game nig
 - React
 - JavaScript (ES6+)
 - HTML/CSS
+- TMDB API (for movies)
 
 ## Installation
 
