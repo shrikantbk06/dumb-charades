@@ -48,36 +48,37 @@ function Charades() {
     <div className="container">
       <h1>Dumb Charades 🎭</h1>
 
-      <button onClick={getWord}>Generate Word</button>
+      <div className="game-section">
+        <button onClick={getWord}>Generate Word</button>
 
-      {word && (
-        <>
-          <button onClick={() => setHidden(!hidden)}>
-            {hidden ? 'Show Word' : 'Hide Word'}
-          </button>
+        {word && (
+          <>
+            <button onClick={() => setHidden(!hidden)}>
+              {hidden ? 'Show Word' : 'Hide Word'}
+            </button>
 
-          <div className="word-box">
-            {!hidden ? word : '••••••••••'}
-          </div>
+            <div className="word-box">
+              {!hidden ? word : '••••••••••'}
+            </div>
 
-          <button onClick={startTimer}>Start Timer</button>
+            <button onClick={startTimer}>Start Timer</button>
 
-          {timeLeft !== null && (
-  <>
-            {timeLeft > 0 ? (
-              <p
-                className={`timer ${
-                  timeLeft > 30 ? 'green' : timeLeft > 10 ? 'orange' : 'red'
-                }`}
-              >
-                ⏳ {timeLeft}s
-              </p>
-            ) : (
-              <p className="timer-end">⏰ Time’s up!</p>
+            {timeLeft !== null && (
+              <>
+                <p
+                  className={`timer ${
+                    timeLeft > 30 ? 'green' : timeLeft > 10 ? 'orange' : 'red'
+                  }`}
+                >
+                  {timeLeft > 0 ? `⏳ ${timeLeft}s` : "⏰ Time's up!"}
+                </p>
+              </>
             )}
           </>
         )}
-              <div className="scoreboard">
+      </div>
+
+      <div className="scoreboard">
         <h2>🏆 Scoreboard</h2>
         <div className="teams">
           <div className="team">
@@ -91,14 +92,10 @@ function Charades() {
             <button onClick={() => setTeamBScore(teamBScore + 1)}>+1 Team B</button>
           </div>
         </div>
-
-        <button onClick={() => { setTeamAScore(0); setTeamBScore(0); }} style={{ marginTop: '20px' }}>
+        <button onClick={() => { setTeamAScore(0); setTeamBScore(0); }}>
           🔄 Reset Scores
         </button>
       </div>
-
-        </>
-      )}
     </div>
   );
 }
